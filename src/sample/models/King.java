@@ -4,13 +4,8 @@ public class King extends AbstractFigure  {
 
     public King(Integer spawnRow, Integer spawnCol,TakenBy color) {
         this.color=color;
-        this.move(spawnRow,spawnCol);
-
-    }
-
-    @Override
-    public void check() {
-        TakenBy friends,enemies;
+        this.row=spawnRow;
+        this.col=spawnCol;
         if (color.equals(TakenBy.White))
         {
             friends=TakenBy.White;
@@ -20,6 +15,13 @@ public class King extends AbstractFigure  {
             friends=TakenBy.Black;
             enemies=TakenBy.White;
         }
+    }
+
+    @Override
+    public void check() {
+        available.clear();
+
+
         if (row+1<board.length  && col+1<board.length && !board[row+1][col+1].equals(friends)) this.available.add(cordAsString(row+1,col+1));
         if (col+1<board.length && !board[row][col+1].equals(friends)) this.available.add(cordAsString(row,col+1));
         if (row-1>=0 && col+1<board.length && !board[row-1][col+1].equals(friends)) this.available.add(cordAsString(row-1,col+1));

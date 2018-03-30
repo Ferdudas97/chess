@@ -4,13 +4,25 @@ public class Pawn extends AbstractFigure {
 
 
     public Pawn(Integer spawnRow, Integer spawnCol,TakenBy color) {
-        this.move(spawnRow,spawnCol);
+        this.row=spawnRow;
+        this.col=spawnCol;
         this.color=color;
+        if (color.equals(TakenBy.White))
+        {
+            friends=TakenBy.White;
+            enemies=TakenBy.Black;
+        }
+        else {
+            friends=TakenBy.Black;
+            enemies=TakenBy.White;
+        }
 
     }
 
     @Override
     public void check() {
+        available.clear();
+
         if (color==TakenBy.White){
             if (row==1) {
                 System.out.println(board[2][col]);

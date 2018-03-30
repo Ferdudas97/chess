@@ -32,171 +32,171 @@
 
         </rowConstraints>
          <children>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.rowIndex="7">
+            <Pane fx:id="_00" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.rowIndex="7">
                <children>
-                  <Button fx:id="whiteTower1" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="whiteTower" />
+                  <Button fx:id="whiteTower0" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="whiteTower" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="1" GridPane.rowIndex="7">
+            <Pane fx:id="_01" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="1" GridPane.rowIndex="7">
                <children>
-                  <Button fx:id="whiteHorse1" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClick" styleClass="whiteHorse" />
+                  <Button fx:id="whiteHorse0" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="whiteHorse" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+            <Pane fx:id="_02" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
                <children>
-                  <Button fx:id="whiteBishop1" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="whiteBishop" />
+                  <Button fx:id="whiteBishop0" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="whiteBishop" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="4" GridPane.rowIndex="7">
+            <Pane fx:id="_04" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="4" GridPane.rowIndex="7">
                <children>
-                  <Button fx:id="whiteKing" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="whiteKing" />
+                  <Button fx:id="whiteKing" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="whiteKing" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="5" GridPane.rowIndex="7">
+            <Pane fx:id="_05" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="5" GridPane.rowIndex="7">
                <children>
-                  <Button fx:id="whiteBishop2" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="whiteBishop" />
+                  <Button fx:id="whiteBishop1" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="whiteBishop" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="6" GridPane.rowIndex="7">
+            <Pane fx:id="_06" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="6" GridPane.rowIndex="7">
                <children>
-                  <Button fx:id="whiteHorse2" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="whiteHorse" />
+                  <Button fx:id="whiteHorse1" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="whiteHorse" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="7" GridPane.rowIndex="7">
+            <Pane fx:id="_07" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="7" GridPane.rowIndex="7">
                <children>
-                  <Button fx:id="whiteTower2" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="whiteTower" />
+                  <Button fx:id="whiteTower1" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="whiteTower" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.rowIndex="6">
+            <Pane fx:id="_10" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.rowIndex="6">
                <children>
-                  <Button fx:id="whitePawn0" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="whitePawn" />
+                  <Button fx:id="whitePawn0" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="whitePawn" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="1" GridPane.rowIndex="6">
+            <Pane fx:id="_11" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="1" GridPane.rowIndex="6">
                <children>
-                  <Button fx:id="whitePawn1" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="whitePawn" />
+                  <Button fx:id="whitePawn1" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="whitePawn" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="3" GridPane.rowIndex="7">
+            <Pane fx:id="_03" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="3" GridPane.rowIndex="7">
                <children>
-                  <Button fx:id="whiteQueen" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="whiteQueen" />
+                  <Button fx:id="whiteQueen" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="whiteQueen" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="3" GridPane.rowIndex="6">
+            <Pane fx:id="_13" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="3" GridPane.rowIndex="6">
                <children>
-                  <Button fx:id="whitePawn3" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="whitePawn" />
+                  <Button fx:id="whitePawn3" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="whitePawn" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="4" GridPane.rowIndex="6">
+            <Pane fx:id="_14" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="4" GridPane.rowIndex="6">
                <children>
-                  <Button fx:id="whitePawn4" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="whitePawn" />
+                  <Button fx:id="whitePawn4" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="whitePawn" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="5" GridPane.rowIndex="6">
+            <Pane fx:id="_15" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="5" GridPane.rowIndex="6">
                <children>
-                  <Button fx:id="whitePawn5" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="whitePawn" />
+                  <Button fx:id="whitePawn5" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="whitePawn" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="6" GridPane.rowIndex="6">
+            <Pane fx:id="_16" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="6" GridPane.rowIndex="6">
                <children>
-                  <Button fx:id="whitePawn6" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="whitePawn" />
+                  <Button fx:id="whitePawn6" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="whitePawn" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="7" GridPane.rowIndex="6">
+            <Pane fx:id="_17" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="7" GridPane.rowIndex="6">
                <children>
-                  <Button fx:id="whitePawn7" layoutX="26.0" layoutY="10.0" mnemonicParsing="false" styleClass="whitePawn" />
+                  <Button fx:id="whitePawn7" layoutX="26.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="whitePawn" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.rowIndex="5" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="2" GridPane.rowIndex="6">
+            <Pane fx:id="_20" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.rowIndex="5" />
+            <Pane fx:id="_12" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="2" GridPane.rowIndex="6">
                <children>
-                  <Button fx:id="whitePawn2" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="whitePawn" />
+                  <Button fx:id="whitePawn2" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="whitePawn" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Pane fx:id="_21" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Pane fx:id="_22" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="2" GridPane.rowIndex="5" />
 
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="4" GridPane.rowIndex="5" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="5" GridPane.rowIndex="5" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="6" GridPane.rowIndex="5" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="7" GridPane.rowIndex="5" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.rowIndex="4" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Pane styleClass="blackPool" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="5" GridPane.rowIndex="4" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="6" GridPane.rowIndex="4" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="7" GridPane.rowIndex="4" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.rowIndex="3" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Pane styleClass="whitePool" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="6" GridPane.rowIndex="3" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="7" GridPane.rowIndex="3" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.rowIndex="2" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="6" GridPane.rowIndex="2" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="7" GridPane.rowIndex="2" />
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.rowIndex="1">
+            <Pane fx:id="_24" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Pane fx:id="_23" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Pane fx:id="_25" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Pane fx:id="_26" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Pane fx:id="_27" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+            <Pane fx:id="_30" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.rowIndex="4" />
+            <Pane fx:id="_31" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Pane fx:id="_32" onMouseClicked="#moveFigureThere" styleClass="blackPool" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Pane fx:id="_33" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Pane fx:id="_34" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Pane fx:id="_35" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Pane fx:id="_36" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Pane fx:id="_37" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+            <Pane fx:id="_40" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.rowIndex="3" />
+            <Pane fx:id="_41" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Pane fx:id="_42" onMouseClicked="#moveFigureThere" styleClass="whitePool" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Pane fx:id="_43" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Pane fx:id="_44" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Pane fx:id="_45" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Pane fx:id="_46" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Pane fx:id="_47" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <Pane fx:id="_50" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.rowIndex="2" />
+            <Pane fx:id="_51" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Pane fx:id="_52" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Pane fx:id="_53" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Pane fx:id="_54" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Pane fx:id="_55" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Pane fx:id="_56" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Pane fx:id="_57" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <Pane fx:id="_60" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.rowIndex="1">
                <children>
-                  <Button fx:id="blackPawn0" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="blackPawn" />
+                  <Button fx:id="blackPawn0" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="blackPawn" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Pane fx:id="_61" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
-                  <Button fx:id="blackPawn1" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="blackPawn" />
+                  <Button fx:id="blackPawn1" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="blackPawn" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <Pane fx:id="_62" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <children>
-                  <Button fx:id="blackPawn2" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="blackPawn" />
+                  <Button fx:id="blackPawn2" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="blackPawn" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <Pane fx:id="_63" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <children>
-                  <Button fx:id="blackPawn3" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="blackPawn" />
+                  <Button fx:id="blackPawn3" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="blackPawn" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="4" GridPane.rowIndex="1">
+            <Pane fx:id="_64" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="4" GridPane.rowIndex="1">
                <children>
-                  <Button fx:id="blackPawn4" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="blackPawn" />
+                  <Button fx:id="blackPawn4" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="blackPawn" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="5" GridPane.rowIndex="1">
+            <Pane fx:id="_65" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="5" GridPane.rowIndex="1">
                <children>
-                  <Button fx:id="blackPawn5" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="blackPawn" />
+                  <Button fx:id="blackPawn5" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="blackPawn" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="6" GridPane.rowIndex="1">
+            <Pane fx:id="_66" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="6" GridPane.rowIndex="1">
                <children>
-                  <Button fx:id="blackPawn6" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="blackPawn" />
+                  <Button fx:id="blackPawn6" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="blackPawn" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="7" GridPane.rowIndex="1">
+            <Pane fx:id="_67" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="7" GridPane.rowIndex="1">
                <children>
-                  <Button fx:id="blackPawn7" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="blackPawn" />
+                  <Button fx:id="blackPawn7" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="blackPawn" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool">
+            <Pane fx:id="_70" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool">
                <children>
-                  <Button fx:id="blackTower1" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="blackTower" />
+                  <Button fx:id="blackTower0" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="blackTower" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="1">
+            <Pane fx:id="_71" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="1">
                <children>
-                  <Button fx:id="blackJumper1" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="blackHorse" />
+                  <Button fx:id="blackHorse0" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="blackHorse" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="2">
+            <Pane fx:id="_72" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="2">
                <children>
-                  <Button fx:id="blackBishop1" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="blackBishop" />
+                  <Button fx:id="blackBishop0" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="blackBishop" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="3">
+            <Pane fx:id="_73" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="3">
                <children>
-                  <Button fx:id="blackQueen" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="blackQueen" />
+                  <Button fx:id="blackQueen" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="blackQueen" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="4">
+            <Pane fx:id="_74" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="4">
                <children>
-                  <Button fx:id="blackKing" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="blackKing" />
+                  <Button fx:id="blackKing" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="blackKing" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="5">
+            <Pane fx:id="_75" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="5">
                <children>
-                  <Button fx:id="blackBishop2" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="blackBishop" />
+                  <Button fx:id="blackBishop1" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="blackBishop" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="6">
+            <Pane fx:id="_76" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="6">
                <children>
-                  <Button fx:id="blackHorse2" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="blackHorse" />
+                  <Button fx:id="blackHorse1" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="blackHorse" />
                </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="7">
+            <Pane fx:id="_77" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="7">
                <children>
-                  <Button fx:id="blackTower2" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" styleClass="blackTower" />
+                  <Button fx:id="blackTower1" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="blackTower" />
                </children></Pane>
          </children>
       </GridPane>
    </center>
    <right>
-      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+      <Pane fx:id="_00" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
    </right>
 </BorderPane>

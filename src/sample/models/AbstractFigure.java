@@ -19,10 +19,16 @@ public abstract class AbstractFigure{
     public Integer row;
     public Integer col;
     protected TakenBy color;
+    protected TakenBy enemies;
+    protected TakenBy friends;
     private   Button figure;
     public void move(Integer rowM, Integer colM){
+        board[row][col]=TakenBy.Empty;
         this.col=colM;
         this.row=rowM;
+        if (color.equals(TakenBy.White)) board[row][col]=TakenBy.White;
+        else board[row][col]=TakenBy.Black;
+
     }
 
     public void setFigure(Button figure) {
@@ -43,4 +49,7 @@ public abstract class AbstractFigure{
 
     public abstract void check();
 
+    public LinkedList<String> getAvailable() {
+        return available;
+    }
 }

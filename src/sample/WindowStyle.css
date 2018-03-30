@@ -10,7 +10,6 @@
 
 }
 .blackPool{
-    -fx-alignment: baseline-center;
     -fx-background-color: black;
     -fx-text-alignment: center;
     -fx-border-style: solid;

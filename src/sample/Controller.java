@@ -8,6 +8,7 @@ import javafx.scene.layout.Pane;
 import sample.models.AbstractFigure;
 import sample.models.Board;
 import sample.models.Pawn;
+import sample.models.TakenBy;
 
 import java.util.LinkedList;
 
@@ -34,20 +35,38 @@ public class Controller {
     private String clickedButtonId="";
     LinkedList<String> list;
     private Button clickedFigure;
+    TakenBy whoIsMoving=TakenBy.White;
+    private Boolean whiteKingMate=false;
+    private Boolean blackKingMate=false;
 
-
+    /*public Controller(){
+        Thread thread=new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while(true){
+                    whiteKingMate=board.isMate("whiteKing");
+                    blackKingMate=board.isMate("blackKing");
+                }
+            }
+        });
+        thread.start();
+        System.out.println(whiteKingMate);
+    }*/
     public void onClickShowPossibleMoves(MouseEvent mouseEvent) {
+
         if (clickedButtonId!=((Button)mouseEvent.getSource()).getId() && clickedButtonId.length()>0) unshowPossibleMoves(list);
 
         clickedFigure=(Button)mouseEvent.getSource();
+        if (clickedFigure.getId().contains(whoIsMoving.toString().toLowerCase())){
+            clickedButtonId=clickedFigure.getId();
+            board.figures.get(clickedFigure.getId()).check();
+            list=board.figures.get(clickedFigure.getId()).getAvailable();
 
-        clickedButtonId=clickedFigure.getId();
-        board.figures.get(clickedFigure.getId()).check();
-        list=board.figures.get(clickedFigure.getId()).getAvailable();
 
 
+            showPossibleMoves(list);
 
-        showPossibleMoves(list);
+        }
 
 
     }
@@ -112,25 +131,72 @@ public class Controller {
 
     public void moveFigureThere(MouseEvent mouseEvent) {
         Pane clickedPane = (Pane)mouseEvent.getSource();
-        if (clickedPane.styleProperty().getValue().equals("-fx-background-color: green")) {
-            if (clickedPane.getChildren().size()>0) clickedPane.getChildren().clear();
-            clickedPane.getChildren().add(clickedFigure);
+        if (clickedPane.styleProperty().getValue().equals("-fx-background-color: green") ) {
+
 
             int row=Integer.valueOf(clickedPane.getId().substring(1,2));
             int col=Integer.valueOf(clickedPane.getId().substring(2,3));
-            board.figures.get(clickedButtonId).move(row,col);
+            int previousCol=board.figures.get(clickedButtonId).col;
+            int previousRow=board.figures.get(clickedButtonId).row;
+            TakenBy whoWasThere=AbstractFigure.board[row][col];
+            Button buttonOnClickedPane=null;;
+            AbstractFigure figureOnClickedPane=null;
 
-            for (int i = 0; i <8 ; i++) {
-                for (int j = 0; j <8 ; j++) {
-                    System.out.print(AbstractFigure.board[i][j].toString()+"   ");
+            if ((board.getBlackKingCol()!=col || board.getBlackKingRow()!=row) && (board.getWhiteKingCol()!=col || board.getWhiteKingRow()!=row)) {
+
+
+                board.figures.get(clickedButtonId).move(row, col);
+                if (clickedPane.getChildren().size()>0) buttonOnClickedPane=(Button) clickedPane.getChildren().get(0);
+                if (buttonOnClickedPane!=null){
+                    figureOnClickedPane=board.figures.get(buttonOnClickedPane.getId());
+                    board.figures.remove(buttonOnClickedPane.getId());
+
                 }
-                System.out.println();
+                unshowPossibleMoves(list);
+
+                if (whoIsMoving.equals(TakenBy.White)){
+                    if (board.isMate("whiteKing")) {
+                        board.figures.get(clickedButtonId).move(previousRow,previousCol);
+                        AbstractFigure.board[row][col]=whoWasThere;
+                        if (buttonOnClickedPane!=null){
+                            board.figures.put(buttonOnClickedPane.getId(),figureOnClickedPane );
+                        }
+
+                    }
+                    else {
+                        whoIsMoving = TakenBy.Black;
+                        if (clickedPane.getChildren().size() > 0) clickedPane.getChildren().clear();
+                        if (clickedFigure.getId().contains("King")) {
+                            board.setWhiteKingRow(row);
+                            board.setWhiteKingCol(col);
+                        }
+                        clickedPane.getChildren().add(clickedFigure);
+                    }
+                }else {
+                    if (board.isMate("blackKing")) {
+                        board.figures.get(clickedButtonId).move(previousRow, previousCol);
+                        AbstractFigure.board[row][col] = whoWasThere;
+                        if (buttonOnClickedPane!=null){
+                            board.figures.put(buttonOnClickedPane.getId(),figureOnClickedPane );
+                        }
+                    }
+                    else  {
+                        whoIsMoving=TakenBy.White;
+                        if (clickedPane.getChildren().size() > 0) clickedPane.getChildren().clear();
+                        if (clickedFigure.getId().contains("King")) {
+                            board.setBlackKingRow(row);
+                            board.setBlackKingCol(col);
+                        }
+                        clickedPane.getChildren().add(clickedFigure);
+                    }
+                }
+
+
 
             }
-
-            unshowPossibleMoves(list);
         }
     }
+
 }
 
 

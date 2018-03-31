@@ -25,9 +25,7 @@ public class Pawn extends AbstractFigure {
 
         if (color==TakenBy.White){
             if (row==1) {
-                System.out.println(board[2][col]);
                 if (board[2][col].equals(TakenBy.Empty)) {
-                    System.out.println("tutaj");
                     this.available.add("2"+col);
                     if (board[3][col].equals(TakenBy.Empty))this.available.add("3"+col);
 
@@ -51,7 +49,6 @@ public class Pawn extends AbstractFigure {
             if ( row-1>=0 && col-1>=0 && board[row-1][col-1].equals(TakenBy.White)) this.available.add(String.valueOf(row-1)+String.valueOf(col-1));
 
         }
-        System.out.println(this.available);
     }
 
 }

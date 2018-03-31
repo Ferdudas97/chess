@@ -26,6 +26,7 @@ public abstract class AbstractFigure{
         board[row][col]=TakenBy.Empty;
         this.col=colM;
         this.row=rowM;
+
         if (color.equals(TakenBy.White)) board[row][col]=TakenBy.White;
         else board[row][col]=TakenBy.Black;
 

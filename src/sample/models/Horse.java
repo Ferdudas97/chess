@@ -33,7 +33,6 @@ public class Horse extends AbstractFigure{
         if ( row-2 >=0 && col-1>=0  && !board[row-2][col-1].equals(friends))this.available.add(cordAsString(row-2,col-1));
         if ( row+2<board.length && col-1>=0 && !board[row+2][col-1].equals(friends)) this.available.add(cordAsString(row+2,col-1));
         if ( row+2<board.length && col+1<board.length && !board[row+2][col+1].equals(friends)) this.available.add(cordAsString(row+2,col+1));
-        System.out.println("kon"+ available.toString());
 
     }
 }

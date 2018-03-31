@@ -5,8 +5,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Board {
-    public Integer board[][]=new Integer[8][8];
     public Map<String,AbstractFigure> figures =new HashMap<>();
+    private int whiteKingRow;
+    private int whiteKingCol;
+    private int blackKingRow;
+    private int blackKingCol;
+
     public Board(){
 
         for (int i = 0; i <8 ; i++) {
@@ -31,6 +35,55 @@ public class Board {
         figures.put("blackBishop1",new Bishop(7,5,TakenBy.Black));
         figures.put("blackQueen",new Queen(7,3,TakenBy.Black));
         figures.put("blackKing",new King(7,4,TakenBy.Black));
+        setBlackKingCol(figures.get("blackKing").col);
+        setBlackKingRow(figures.get("blackKing").row);
+        setWhiteKingCol(figures.get("whiteKing").col);
+        setWhiteKingRow(figures.get("whiteKing").row);
 
+
+    }
+    public boolean isMate(String king){
+        int kingRow=figures.get(king).row;
+        int kingCol=figures.get(king).col;
+        String kingPosition=String.valueOf(kingRow)+String.valueOf(kingCol);
+        for (AbstractFigure figure: figures.values()) {
+            figure.check();
+            if (figure.available.contains(kingPosition)) return true;
+
+        }
+
+        return false;
+    }
+
+    public void setWhiteKingCol(int whiteKingCol) {
+        this.whiteKingCol = whiteKingCol;
+    }
+
+    public void setWhiteKingRow(int whiteKingRow) {
+        this.whiteKingRow = whiteKingRow;
+    }
+
+    public void setBlackKingRow(int blackKingRow) {
+        this.blackKingRow = blackKingRow;
+    }
+
+    public void setBlackKingCol(int blacKingCol) {
+        blackKingCol = blacKingCol;
+    }
+
+    public int getBlackKingCol() {
+        return blackKingCol;
+    }
+
+    public int getBlackKingRow() {
+        return blackKingRow;
+    }
+
+    public int getWhiteKingCol() {
+        return whiteKingCol;
+    }
+
+    public int getWhiteKingRow() {
+        return whiteKingRow;
     }
 }

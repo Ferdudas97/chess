@@ -6,15 +6,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 
 public abstract class AbstractFigure{
-    static public TakenBy board [][]=new TakenBy[8][8];
-    static  {
-        //b -- black | w -- white | n -- none
-        for (int i = 0; i <8 ; i++) {
-            if (i == 0 || i == 1) Arrays.fill(board[i], TakenBy.White);
-            else if (i == 6 || i == 7) Arrays.fill(board[i], TakenBy.Black);
-            else Arrays.fill(board[i], TakenBy.Empty);
-        }
-    }
+    static public TakenBy board [][]=new Board().getBoard();
     protected LinkedList<String> available =new LinkedList<>();
     public Integer row;
     public Integer col;

@@ -31,7 +31,7 @@ public class Pawn extends AbstractFigure {
 
                 }
             }
-            else if (board[row+1][col].equals(TakenBy.Empty)) this.available.add(String.valueOf(row+1)+col);
+            else if (row+1<board.length &&board[row+1][col].equals(TakenBy.Empty)) this.available.add(String.valueOf(row+1)+col);
             if ( row+1<board.length && col+1<board.length && board[row+1][col+1].equals(TakenBy.Black)) this.available.add(String.valueOf(row+1)+String.valueOf(col+1));
          if ( row+1<board.length && col-1>=0 && board[row+1][col-1].equals(TakenBy.Black)) this.available.add(String.valueOf(row+1)+String.valueOf(col-1));
 
@@ -44,7 +44,7 @@ public class Pawn extends AbstractFigure {
 
                 }
             }
-            else if (board[row-1][col].equals(TakenBy.Empty)) this.available.add(String.valueOf(row-1)+col);
+            else if ( row-1>=0 && board[row-1][col].equals(TakenBy.Empty)) this.available.add(String.valueOf(row-1)+col);
             if ( row-1>=0 && col+1<board.length && board[row-1][col+1].equals(TakenBy.White)) this.available.add(String.valueOf(row-1)+String.valueOf(col+1));
             if ( row-1>=0 && col-1>=0 && board[row-1][col-1].equals(TakenBy.White)) this.available.add(String.valueOf(row-1)+String.valueOf(col-1));
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="mainPane" prefHeight="452.0" prefWidth="601.0" stylesheets="/sample/styles/PawnChangerStyle.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.PawnChangeBoardController">
+   <children>
+      <ImageView fx:id="pawnView" fitHeight="200.0" fitWidth="200.0" layoutX="43.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="figureView" fitHeight="200.0" fitWidth="200.0" layoutX="351.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="submit" layoutX="268.0" layoutY="317.0" mnemonicParsing="false" onMouseClicked="#submitChange" text="Change" />
+      <ChoiceBox fx:id="listOfFigures" layoutX="376.0" layoutY="69.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

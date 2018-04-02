@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="/sample/WindowStyle.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="/sample/styles/WindowStyle.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.BoardController">
     <center>
       <GridPane fx:id="chessBoard" BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -173,9 +178,9 @@
                <children>
                   <Button fx:id="blackBishop0" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="blackBishop" />
                </children></Pane>
-            <Pane fx:id="_73" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="3">
+            <Pane fx:id="_73" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="whitePool" GridPane.columnIndex="3">
                <children>
-                  <Button fx:id="blackQueen" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="blackQueen" />
+                  <Button fx:id="blackQueen" alignment="CENTER" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShowPossibleMoves" styleClass="blackQueen" />
                </children></Pane>
             <Pane fx:id="_74" onMouseClicked="#moveFigureThere" prefHeight="200.0" prefWidth="200.0" styleClass="blackPool" GridPane.columnIndex="4">
                <children>
@@ -197,6 +202,45 @@
       </GridPane>
    </center>
    <right>
-      <Pane fx:id="_00" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+      <VBox id="rightPane" prefHeight="400.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="whoseTurn" alignment="CENTER" prefHeight="48.0" prefWidth="200.0" text="player White">
+               <font>
+                  <Font name="Droid Sans Mono Dotted" size="22.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.48863636363636365" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#fbff00" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill></Label>
+            <Label fx:id="turnNumber" prefHeight="50.0" prefWidth="200.0" text="Turn: 1">
+               <textFill>
+                  <RadialGradient centerX="0.48863636363636365" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#fbff00" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <font>
+                  <Font name="Droid Sans Mono" size="45.0" />
+               </font>
+            </Label>
+            <Button fx:id="newGame" mnemonicParsing="false" onMouseClicked="#startNewGame" prefHeight="31.0" prefWidth="200.0" text="Start new game" underline="true">
+               <font>
+                  <Font name="Droid Sans Mono" size="19.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.48863636363636365" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#fbff00" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill></Button>
+         </children></VBox>
    </right>
 </BorderPane>

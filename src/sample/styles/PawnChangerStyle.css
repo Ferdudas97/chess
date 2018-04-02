@@ -1,0 +1,4 @@
+#mainPane{
+    -fx-background-image: url("../images/chessImage.jpg");
+    -fx-background-size: cover;
+}

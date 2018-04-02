@@ -1,0 +1,73 @@
+
+
+.whitePool {
+    -fx-background-color: white;
+    -fx-alignment: top-right;
+    -fx-border-style: solid;
+    -fx-border-color: darkgrey;
+    -fx-border-width: 2px;
+
+
+}
+.blackPool{
+    -fx-background-color: black;
+    -fx-text-alignment: center;
+    -fx-border-style: solid;
+    -fx-border-color: darkgrey;
+    -fx-border-width: 2px;
+
+}
+
+#chessBoard .button{
+    -fx-pref-width: 100px;
+    -fx-pref-height: 100px;
+    -fx-background-color: transparent;
+    -fx-background-size: stretch;
+    -fx-alignment: center;
+}
+
+.whiteHorse{
+    -fx-background-image:  url("../images/w_knight_png_withShadow.png");
+   
+}
+.whitePawn{
+    -fx-background-image: url("../images/w_pawn_png_withShadow.png");
+}
+.whiteBishop{
+    -fx-background-image: url("../images/w_bishop_png_withShadow.png");
+}
+.whiteKing{
+    -fx-background-image: url("../images/w_king_png_withShadow.png");
+}
+.whiteQueen{
+    -fx-background-image: url("../images/w_queen_png_withShadow.png");
+}
+.whiteTower{
+    -fx-background-image: url("../images/w_rook_png_withShadow.png");
+}
+.blackPawn{
+    -fx-background-image: url("../images/b_pawn_png_withShadow.png");
+}
+.blackBishop{
+    -fx-background-image: url("../images/b_bishop_png_withShadow.png");
+}
+.blackHorse{
+    -fx-background-image: url("../images/b_knight_png_withShadow.png");
+}
+.blackKing{
+    -fx-background-image: url("../images/b_king_png_withShadow.png");
+}
+.blackQueen{
+    -fx-background-image: url("../images/b_queen_png_withShadow.png");
+}
+.blackTower{
+    -fx-background-image: url("../images/b_rook_png_withShadow.png");
+}
+#rightPane{
+    -fx-background-image: url("../images/whiteMarmur.jpg");
+    -fx-background-size: stretch;
+}
+#rightPane .button, .label{
+    -fx-background-image: url("../images/blackMarmur.jpg");
+    -fx-background-size: stretch;
+}

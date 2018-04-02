@@ -1,6 +1,10 @@
 package sample.models;
 
 
+import javafx.scene.control.Alert;
+import javafx.scene.control.DialogPane;
+
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,10 +14,15 @@ public class Board {
     private int whiteKingCol;
     private int blackKingRow;
     private int blackKingCol;
+    private  TakenBy board [][]=new TakenBy[8][8];
+
 
     public Board(){
 
         for (int i = 0; i <8 ; i++) {
+            if (i == 0 || i == 1) Arrays.fill(board[i], TakenBy.White);
+            else if (i == 6 || i == 7) Arrays.fill(board[i], TakenBy.Black);
+            else Arrays.fill(board[i], TakenBy.Empty);
 
             figures.put("whitePawn"+i,new Pawn(1,i,TakenBy.White));
             figures.put("blackPawn"+i,new Pawn(6,i,TakenBy.Black));
@@ -48,12 +57,21 @@ public class Board {
         String kingPosition=String.valueOf(kingRow)+String.valueOf(kingCol);
         for (AbstractFigure figure: figures.values()) {
             figure.check();
-            if (figure.available.contains(kingPosition)) return true;
+            if (figure.available.contains(kingPosition)){
+                Alert alert = new Alert(Alert.AlertType.WARNING);
+                alert.setTitle("Warning Dialog");
+                alert.setHeaderText("It`s mate");
+                alert.setContentText(" You should protect the King");
+
+                alert.showAndWait();
+                return true;
+            }
 
         }
 
         return false;
     }
+
 
     public void setWhiteKingCol(int whiteKingCol) {
         this.whiteKingCol = whiteKingCol;
@@ -85,5 +103,9 @@ public class Board {
 
     public int getWhiteKingRow() {
         return whiteKingRow;
+    }
+
+    public TakenBy[][] getBoard() {
+        return board;
     }
 }
